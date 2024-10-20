@@ -30,8 +30,8 @@ export const getServerSideProps = (async () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        api_key_id: process.env.NEXT_API_KEY,
-        api_key_secret: process.env.NEXT_API_KEY_SECRET,
+        api_key_id: process.env.API_KEY,
+        api_key_secret: process.env.API_KEY_SECRET,
       }),
     }
   );
